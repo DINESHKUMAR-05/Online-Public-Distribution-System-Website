@@ -1,0 +1,200 @@
+<html>
+    <Head>
+        <Title>Order Page</Title>
+        <style>
+        li a {
+            display: block;
+            width: 100%;
+            color: #000;
+            padding-top: 25px;
+            padding-left: 0px;
+            text-decoration: none;
+            float: top;
+        }
+
+        ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            width: 200px;
+            background-color:#d18851;
+            height: 70%; 
+            position: fixed;
+            overflow: auto; 
+            border-radius: 18px;
+        }
+          
+        li a:hover {
+            background-color: #ebc96c;
+            color: #d18851;
+            height:50px;
+        }
+
+          
+        li {
+            text-align: left;
+            height: 15%;
+            font-size: 18px;
+        }
+
+        .active { background-color: #ebc96c;
+                 height:12%;
+                 }
+
+        .imgcontainer {
+            text-align: center;
+            margin: 0px 0 0px 0;
+            position: fixed;
+            overflow: auto;
+            height:250px; 
+            }
+
+        img.avatar {
+            width: 50%;
+            height: 100%;
+            border-radius: 50%;
+            }
+
+            .dropdown {
+                float: right;
+                overflow: hidden;
+              }
+              
+              .dropdown .dropbtn {
+                font-size: 16px;
+                border: none;
+                outline: none;
+                color: white;
+                padding-right: 110px;
+                background-color: inherit;
+                font-family: inherit; 
+                margin: 0;
+              }
+            
+              .dropdown-content {
+                display: none;
+                position: absolute;
+                background-color: #afabab;
+                min-width: 160px;
+                box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+                z-index: 1;
+                border-radius: 18px;
+              }
+              
+              .dropdown-content a {
+                float: none;
+                color: black;
+                padding: 12px 16px;
+                text-decoration: none;
+                display: block;
+                text-align: left;
+              }
+              
+              .dropdown-content a:hover {
+                background-color: #ebc96c;
+                border-radius: 18px;
+              }
+              
+              .dropdown:hover .dropdown-content {
+                display: block;
+              }
+               
+        </style>
+        <link rel="stylesheet" type="text/css" href="orderpage.css">
+    </Head>
+    <Body>
+            <div class="imgcontainer">
+                        <table style="background-color:#d18851; border-radius:18px;" width="100%">
+                            <tr>
+                                <td width="20%">
+                                    <center>
+                                    <img src="crops logo.jpg" alt="Avatar" class="avatar">
+                                </center>
+                                </td>
+                                <td style="font-size:30px;font-family:cursive;">
+                                    <b>Online Public Distribution System</b>
+                                </td>
+                                <td style="padding-right:0px">
+                                    <div class="dropdown">
+                                        <button class="dropbtn">
+                                            <img src="user.png" width="50px" height="50px" style="border-radius:50%;float:right;">
+                                        </button>
+                                        <div class="dropdown-content">
+                                            <a href="http://localhost:4000/">Card Details<img src="card details.png" width="25px" height="25px" align="right" ></a>
+                                            <a href="index.html">Log out<img src="logout.webp" width="25px" height="25px" align="right" ></a>
+                                        </div>
+                                      </div>
+                                </td>
+                            </tr>
+                        </table>
+                </div>
+           <div style="float:left;padding-top:220px;" width="30%">
+                    <ul>
+                        <li><a href="Homepage.html"><img src="Home.png" width="25px" height="25px" align="center" style="padding-left:30px;"><b>&emsp;Home</b></a></li>
+                        <li class="active"><a href="contact.asp"><img src="cart.png" width="25px" height="25px" align="center" style="padding-left:30px;"><b>&emsp;Order</b></a></li>
+                        <li><a href="http://localhost:5000/"><img src="History.png" width="25px" height="25px" align="center" style="padding-left:30px;"><b>&emsp;History</b></a></li>
+                        <li><a href="feedback.html"><img src="Feedback.png" width="25px" height="25px" align="center" style="padding-left:30px;"><b>&emsp;Feedback</b></a></li>
+                    </ul>
+            </div>
+            <div style="float:left; padding-left:450px; padding-top:250px; padding-right:50px;" width="60%">
+                <br>
+                <br>
+                <br>
+                <form action="/order_details" method="post" width="100%">
+                <label for="shopno" style="font-size:18px;"><b>Enter the  Shop Number :</b></label>
+                <input type="number" placeholder="          shop no" name="shopno" id="shopno" required style=" width: 15%;padding: 14px 20px;margin: 8px 0;display: inline-block;border: 3px solid rgb(0, 0, 0);box-sizing: border-box;border-radius: 120px;"> &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;
+                <label for="shopdate" style="font-size:18px;"><b>Enter the Date of Takeaway :</b></label>
+                <input type="date"  name="shopdate" id="shopdate" style="width: 15%;padding: 14px 20px;margin: 8px 0;display: inline-block;border: 3px solid rgb(0, 0, 0);box-sizing: border-box;border-radius: 120px;" required>&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;<br>
+                <label for="taketime"  style="font-size:18px;"><b>Select a time:&emsp;&emsp;&emsp;&emsp;&emsp;</b></label>
+                <input type="time"  id="taketime" name="taketime" required style=" width: 15%;padding: 14px 20px;margin: 8px 0;display: inline-block;border: 3px solid rgb(0, 0, 0);box-sizing: border-box;border-radius: 120px;"> &emsp;&emsp;&emsp;&emsp;
+                <label for="cardno" style="font-size:18px;"><b>Enter the Card Number :</b></label>
+                <input type="number" id="cardno" placeholder="          Card no" name="cardno" required style=" width: 30%;padding: 14px 20px;margin: 8px 0;display: inline-block;border: 3px solid rgb(0, 0, 0);box-sizing: border-box;border-radius: 120px;">
+            <br>
+            <br>     
+                <main>
+               <div class="shopping-cart-wrapper">
+                 <table class="table is-fullwidth shopping-cart" style="width:90%;border-collapse:collapse;text-align: center;">
+                   <thead>
+                     <tr style="border-bottom:1pt solid black;height:50px;">
+                       <th><abbr title="Position"></abbr></th>
+                       <th>Product</th>
+                       <th>Name</th>
+                       <th>Price</th>
+                       <th>Metrics</th>
+                       <th>Quantity</th>
+                       <th>Total</th>
+                       <th></th>
+                     </tr>
+                   </thead>
+                 </table>
+                 <br>
+                 <br>
+                 <div class="totals" style="padding-left:550px;">
+                  <center>
+                   <div class="totals-item">
+                     <div style="float:left;"><label>Subtotal</label></div>
+                     <div class="totals-value" id="cart-subtotal">￥0</div>
+                   </div>
+                   <div class="totals-item">
+                     <div style="float:left;" ><label>GST (3%)</label></div>
+                     <div class="totals-value" id="cart-tax">￥0</div>
+                   </div>
+                   <div class="totals-item">
+                     <div style="float:left;"><label>CGST</label></div>
+                     <div class="totals-value" id="cart-shipping">￥0</div>
+                   </div>
+                   <div class="totals-item totals-item-total">
+                     <div style="float:left;"><label>Grand Total</label></div>
+                     <div class="totals-value" id="carttotal"><input type="number" id="ordertotal" name="ordertotal" value="￥0"></div>
+                   </div>
+                   <button class="checkout"type="submit" id="submit3">Book Slot</button>
+                 </div>
+               </div>
+              </center>
+                </main>
+        </form>
+        </div>
+        <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js'></script>
+        <script  src="orderpage.js"></script>
+    </Body>
+</html>

@@ -1,0 +1,122 @@
+<html>
+<head>
+  <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+  
+  input[type=number], input[type=password] {
+    width: 90%;
+    padding: 14px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 3px solid rgb(0, 0, 0);
+    box-sizing: border-box;
+    border-radius: 120px;
+  }
+  
+ 
+  button {
+    background-color: #d18851;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 25%;
+    border-radius: 120px;
+    border: 1px solid rgb(0, 0, 0);
+  }
+  
+  /* Add a hover effect for buttons */
+  button:hover {
+    opacity: 0.8;
+  }
+  
+  /* Extra style for the cancel button (red) */
+  .createuserbtn {
+    width: auto;
+    padding: 15px 18px;
+    background-color: #f44336;
+  }
+  
+  /* Center the avatar image inside this container */
+  .imgcontainer {
+    text-align: center;
+    padding-left: -10px;
+  }
+  
+  /* Avatar image */
+  img.avatar {
+    width: 50%;
+    height: 100%;
+    border-radius: 50%;
+  }
+ 
+  /* Add padding to containers */
+  .container {
+    padding-top: 40px;
+    padding-right: 200px;
+    float: right;
+  }
+  
+  /* The "Forgot password" text */
+  span.psw {
+    float: right;
+    padding-top: 16px;
+  }
+  
+  /* Change styles for span and cancel button on extra small screens */
+  @media screen and (max-width: 300px) {
+    span.psw {
+      display: block;
+      float: none;
+    }
+    .createuserbtn {
+      width: 100%;
+    }
+  }
+    </style>
+    <title>Login Page</title>
+</head>
+<body background="crowd.jpg">
+  <div class="imgcontainer">
+    <table style="background-color:#d18851; border-radius:50px;" width="100%">
+      <tr>
+          <td width="20%">
+              <center>
+              <img src="crops logo.jpg" alt="Avatar" class="avatar">
+          </center>
+          </td>
+          <td style="font-size:30px;font-family:cursive;">
+              <b>Online Public Distribution System</b>
+          </td>
+      </tr>
+  </table>
+  </div>
+<form action="" method="post" width="100%" height="100%">
+    <div class="container">
+    <table width="150%" height="60%" style="border-radius: 20px; background-color:rgb(74, 161, 74)">
+        <tr>
+          <td>&emsp;</td>
+            <td>
+      <label for="cardnumber" style="font-size:18px;"><b>Card Number</b></label>
+      <input type="number" placeholder="Enter Card Number" name="cardnumber" required >
+      <br>
+      <br>
+      <label for="psw" style="font-size:18px;"><b>Password</b></label>
+      <input type="password" placeholder="Enter Password" name="psw" required>
+      <br>
+      <br>
+      <button type="submit" >Login</button>
+      <span class="psw"style="font-size:18px;"><a href="#"><b>Forgot password?</b></a></span>
+      <br>
+      <a href="index.html"><button type="button" class="createuserbtn">Create User</button></a>
+    </td>
+    <td>&emsp;</td>
+    </tr>
+    </table>
+    </div>
+</form>
+</body>
+</html>
+

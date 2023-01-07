@@ -1,0 +1,181 @@
+<html>
+<head>
+  <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+  
+  input[type=number], input[type=password],input[type=text],input[type=email] {
+    width: 90%;
+    padding: 14px 16px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 3px solid rgb(0, 0, 0);
+    box-sizing: border-box;
+    border-radius: 120px;
+    opacity:100%;
+  }
+  
+ 
+  button {
+    background-color: #d18851;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 25%;
+    border-radius: 120px;
+    border: 1px solid rgb(0, 0, 0);
+    opacity:100%;
+  }
+  
+  /* Add a hover effect for buttons */
+  button:hover {
+    opacity: 0.8;
+  }
+
+  .move {
+    padding-top:250px;
+    padding-left: 100px;
+
+  }
+  
+  /* Extra style for the cancel button (red) */
+  .createuserbtn {
+    width: 50%;
+    padding: 15px 18px;
+    background-color: #01d869;
+    float:center;
+    color: aliceblue;
+    font-size: 20px;
+  }
+  
+  /* Center the avatar image inside this container */
+  .imgcontainer {
+    text-align: center;
+    padding-left: -10px;
+    position: fixed;
+    overflow: auto;
+  }
+  
+  /* Avatar image */
+  img.avatar {
+    width: 50%;
+    height: 100%;
+    border-radius: 50%;
+  }
+ 
+  /* Add padding to containers */
+  .container {
+    padding-top: 60px;
+    padding-bottom: 60px;
+    padding-left: 150px;
+    padding-right: 100px;
+    width:30%;
+    background-color: #d18851;
+    border-radius: 5%;
+    float:left;
+  }
+  
+  /* The "Forgot password" text */
+  span.psw {
+    float: right;
+    padding-top: 16px;
+  }
+  
+  /* Change styles for span and cancel button on extra small screens */
+  @media screen and (max-width: 300px) {
+    span.psw {
+      display: block;
+      float: none;
+    }
+  }
+    </style>
+    <title>Index Page</title>
+</head>
+<body background="crowd.jpg">
+  <div class="imgcontainer">
+    <table style="background-color:#d18851; border-radius:50px;" width="100%">
+      <tr>
+          <td width="20%">
+              <center>
+              <img src="crops logo.jpg" alt="Avatar" class="avatar">
+          </center>
+          </td>
+          <td style="font-size:30px;font-family:cursive;">
+              <b>Online Public Distribution System</b>
+          </td>
+      </tr>
+  </table>
+  </div>
+  <div class="move">
+    <div class="container">
+      <form action="/sign_up" method="post" width="100%" height="100%">
+      <label for="cardnumber" style="font-size:18px;"><b>Card Number</b></label>
+      <input type="number" placeholder="Enter Card Number" name="cardnumber" id="cardnumber" required >
+      <br>
+      <br>
+      <label for="familyhead" style="font-size:18px;"><b>Head of the Family</b></label>
+      <input type="text" placeholder="Enter the Name of the Head of the Family" name="familyhead" id="familyhead" required>
+      <br>
+      <br>
+      <label for="count" style="font-size:18px;"><b>Number of Family Members</b></label>
+      <input type="number" placeholder="Enter the no. of Family Members" name="count" id="count" required>
+      <br>
+      <br>
+      <label for="address" style="font-size:18px;"><b>Address</b></label>
+      <input type="text" placeholder="Residential Address" name="address" id="address" required>
+      <br>
+      <br>
+      <label for="shop" style="font-size:18px;"><b>Shop Number</b></label>
+      <input type="number" placeholder="Enter the Shop Number" name="shop" id="shop" required>
+      <br>
+      <br>
+      <label for="phnumber" style="font-size:18px;"><b>Phone Number</b></label>
+      <input type="number" placeholder="Enter Phone Number" name="phnumber" id="phnumber" required>
+      <br>
+      <br>
+      <label for="mailid" style="font-size:18px;"><b>Mail id</b></label><br>
+      <input type="email" placeholder="Enter the mail id" name="mailid" id="mailid" required>
+      <br>
+      <br>
+      <label for="pwd" style="font-size:18px;"><b>Enter Password</b></label>
+      <input type="password" placeholder="Enter Password" name="pwd" id="pwd" required>
+      <br>
+      <br>
+      <center>
+      <button type="submit" class="createuserbtn" id="submit1">Create User</button>
+      </center>
+    </form>
+    </div>
+    </div>
+    <div style="float:right; padding-right:400px;width:30%">
+      <form action="/log_in" method="post" width="100%" height="100%">
+        <div>
+        <table width="150%" height="60%" style="border-radius: 20px; background-color:rgb(74, 161, 74)">
+            <tr>
+              <td>&emsp;</td>
+                <td>
+          <label for="logincardnumber" style="font-size:18px;"><b>Card Number</b></label>
+          <input type="number" placeholder="Enter Card Number" name="logincardnumber" id="logincardnumber" required >
+          <br>
+          <br>
+          <label for="loginpsw" style="font-size:18px;"><b>Password</b></label>
+          <input type="password" placeholder="Enter Password" name="loginpsw" id="loginpsw" required>
+          <br>
+          <br>
+          <button type="submit" id="submit2" >Login</button>
+          <span class="psw"style="font-size:18px;"><a href="#"><b>Forgot password?</b></a></span>
+          <br>
+        </td>
+        <td>&emsp;</td>
+        </tr>
+        </table>
+        </div>
+    </form>
+
+    </div>
+
+</body>
+</html>
+

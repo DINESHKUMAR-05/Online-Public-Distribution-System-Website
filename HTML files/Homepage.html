@@ -1,0 +1,244 @@
+<html>
+    <Head>
+        <Title>Home Page</Title>
+        <style>
+        li a {
+            display: block;
+            width: 100%;
+            color: #000;
+            padding-top: 25px;
+            padding-left: 0px;
+            text-decoration: none;
+            float: top;
+        }
+
+        ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            width: 200px;
+            background-color:#d18851;
+            height: 70%; 
+            position: fixed;
+            overflow: auto; 
+            border-radius: 18px;
+        }
+          
+        li a:hover {
+            background-color: #ebc96c;
+            color: #d18851;
+            height:50px;
+        }
+
+          
+        li {
+            text-align: left;
+            height: 15%;
+            font-size: 18px;
+        }
+
+        .active { background-color: #ebc96c;
+                 height:12%
+                 }
+
+        .imgcontainer {
+            text-align: center;
+            margin: 0px 0 0px 0;
+            position: fixed;
+            overflow: auto;
+            height:250px; 
+            }
+
+        img.avatar {
+            width: 50%;
+            height: 100%;
+            border-radius: 50%;
+            }
+
+            .dropdown {
+                float: right;
+                overflow: hidden;
+              }
+              
+              .dropdown .dropbtn {
+                font-size: 16px;
+                border: none;
+                outline: none;
+                color: white;
+                padding-right: 110px;
+                background-color: inherit;
+                font-family: inherit; 
+                margin: 0;
+              }
+            
+              .dropdown-content {
+                display: none;
+                position: absolute;
+                background-color: #afabab;
+                min-width: 160px;
+                box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+                z-index: 1;
+                border-radius: 18px;
+              }
+              
+              .dropdown-content a {
+                float: none;
+                color: black;
+                padding: 12px 16px;
+                text-decoration: none;
+                display: block;
+                text-align: left;
+              }
+              
+              .dropdown-content a:hover {
+                background-color: #ebc96c;
+                border-radius: 18px;
+              }
+              
+              .dropdown:hover .dropdown-content {
+                display: block;
+              }
+
+        </style>
+    </Head>
+    <Body>
+            <div class="imgcontainer">
+                        <table style="background-color:#d18851; border-radius:18px;" width="100%">
+                            <tr>
+                                <td width="20%">
+                                    <center>
+                                    <img src="crops logo.jpg" alt="Avatar" class="avatar">
+                                </center>
+                                </td>
+                                <td style="font-size:30px;font-family:cursive;">
+                                    <b>Online Public Distribution System</b>
+                                </td>
+                                <td style="padding-right:0px">
+                                    <div class="dropdown">
+                                        <button class="dropbtn">
+                                            <img src="user.png" width="50px" height="50px" style="border-radius:50%;float:right;">
+                                        </button>
+                                        <div class="dropdown-content">
+                                            <a href="http://localhost:4000/">Card Details<img src="card details.png" width="25px" height="25px" align="right" ></a>
+                                            <a href="index.html">Log out<img src="logout.webp" width="25px" height="25px" align="right" ></a>
+                                        </div>
+                                      </div>
+                                </td>
+                            </tr>
+                        </table>
+                </div>
+           <div style="float:left;padding-top:220px;" width="40%" height="100%">
+                    <ul>
+                        <li class="active"><a href="Homepage.html"><img src="Home.png" width="25px" height="25px" align="center" style="padding-left:30px;"><b>&emsp;Home</b></a></li>
+                        <li><a href="Order page.html"><img src="cart.png" width="25px" height="25px" align="center" style="padding-left:30px;"><b>&emsp;Order</b></a></li>
+                        <li><a href="http://localhost:5000/"><img src="History.png" width="25px" height="25px" align="center" style="padding-left:30px;"><b>&emsp;History</b></a></li>
+                        <li><a href="feedback.html"><img src="Feedback.png" width="25px" height="25px" align="center" style="padding-left:30px;"><b>&emsp;Feedback</b></a></li>
+                    </ul>
+            </div>
+            <div style="float:right; padding-left:250px; padding-top:200px; padding-right:50px;" width="60%" >
+                <center><img src="Grains.cms" width="250px" height="250px"></center><br>   
+                <p style="font-size:20px;">&emsp;&emsp;&emsp; The Public Distribution System (PDS) evolved as a system of management of scarcity through distribution of foodgrains at affordable prices. Over the years, PDS has become an important part of Government’s policy for management of food economy in the country. PDS is supplemental in nature and is not intended to make available the entire requirement of any of the commodities distributed under it to a household or a section of the society. PDS is operated under the joint responsibility of the Central and the State/UT Governments. The Central Government, through Food Corporation of India (FCI), has assumed the responsibility for procurement, storage, transportation and bulk allocation of food grains to the State Governments. The operational responsibility including allocation within State, identification of eligible families, issue of Ration Cards and supervision of the functioning of Fair Price Shops (FPSs) etc., rest with the State Governments. Under the PDS, presently the commodities namely wheat, rice, sugar and kerosene are being allocated to the States/UTs for distribution. Some States/UTs also distribute additional items of mass consumption through the PDS outlets such as pulses, edible oils, iodized salt, spices, etc.<p>
+                <br>
+                <br>
+                <br>
+                <center>
+                <div>
+                <table width="40%" style="border-color:#000;border-collapse:collapse;border-radius:18px;" border="1px">
+                    <tr><th bgcolor="Grey" style="font-size:20px" ><center>Announcements&emsp;<img src="announcement.png" width="20px" height="20px"></center></th></tr>
+                    <tr><td>
+                        <marquee width="80%" direction="up" scrollamount="2" height="200px" style="padding:25px;padding-left:50px;"><dl><li>Now, you can avail rations anywhere arround the country, if you hold a card irrespective of the state you belong to.</li>
+                        <br><br><br><li>To apply for new ration cards or to make changes in existing ration cards visit the nearest ration shops.</li>
+                        <br><br><br><li>Now avoid long queues and save your time, book your time slots and pick up the orders without waiting for a while.</li></dl></marquee>
+                    </td></tr>
+                </table>
+                </div>
+                </center>
+                <br>
+                <br>
+                <br>
+                <table width="100%">
+                    <tr>
+                        <th style="font-size:25px;background-color:#afabab;" colspan="3"><b><center><i>Prices</i></center></b></th>
+                    </tr>
+                    <tr>
+                        <td>
+                            <center>
+                            <br><br>
+                            <img src="Rice.png" width="200px" height="200px">
+                            <br><b style="font-size:20px;">Rice</b><br><b><i>Price : </i></b> ₹5/Kg <br>
+                            <br><br>
+                            </center>
+                        </td>
+                        <td>
+                            <center>
+                            <br><br>
+                            <img src="Wheat.png" width="200px" height="200px">
+                            <br><b style="font-size:20px;">Wheat</b><br><b><i>Price : </i></b> ₹8/Kg <br>
+                            <br><br>
+                            </center>
+                        </td>
+                        <td>
+                            <center>
+                            <br><br>
+                            <img src="Sugar.png" width="200px" height="200px">
+                            <br><b style="font-size:20px;">Sugar</b><br><b><i>Price : </i></b> ₹14/Kg <br>
+                            <br><br>
+                            </center>
+                        </td>
+                    </tr>
+                    <tr>
+                       
+                       
+                    </tr>
+                    <tr>
+                        <td>
+                            <center>
+                            <br><br>
+                            <img src="Kerosene.png" width="200px" height="200px">
+                            <br><b style="font-size:20px;">Kerosene</b><br><b><i>Price : </i></b> ₹15/Litre <br>
+                            <br><br>
+                            </center>
+                        </td>
+                        <td>
+                            <center>
+                            <br><br>
+                            <img src="Toor Dhal.png" width="200px" height="200px">
+                            <br><b style="font-size:20px;">Toor Dhal</b><br><b><i>Price : </i></b> ₹20/Kg <br>
+                            <br><br>
+                            </center>
+                        </td>
+                        <td>
+                            <center>
+                            <br><br>
+                            <img src="Urid Dhal.jpg" width="200px" height="200px" style="border-radius:50%;">
+                            <br><b style="font-size:20px;">Urid Dhal</b><br><b><i>Price : </i></b> ₹30/Kg <br>
+                            <br><br>
+                            </center>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td colspan="1.5">
+                            <center>
+                            <br><br>
+                            <img src="Palm Oil.png" width="200px" height="200px">
+                            <br><b style="font-size:20px;">Palm Oil</b><br><b><i>Price : </i></b> ₹25/Litre <br>
+                            <br><br>
+                            </center>
+                        </td>
+                        <td colspan="1.5">
+                            <center>
+                            <br><br>
+                            <img src="Salt.png" width="200px" height="200px">
+                            <br><b style="font-size:20px;">Salt</b><br><b><i>Price : </i></b> ₹20/Kg <br>
+                            <br><br>
+                            </center>
+                        </td>
+                    </tr>
+                </table>
+
+
+
+            </div>
+            
+    </Body>
+</html>
