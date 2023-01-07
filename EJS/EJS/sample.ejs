@@ -1,0 +1,22 @@
+<html>
+<head>
+    <title>sample connectivity retrieval</title>
+</head>
+<body>
+    <table style="border-collapse:collapse;border:2px;border-radius:20%;height:90%;width:90%;border-color:black;border-inline:initial;">
+    <% usersList.forEach(user => {%>
+    <tr>
+      <td><p><%= user.CardNumber %></p></td>
+      <td><p><%= user.FamilyHead %></p></td>
+      <td><p><%= user.Count %></p></td>
+      <td><p><%= user.Address %></p></td>
+      <td><p><%= user.Shopno %></p></td>
+      <td><p><%= user.PhNumber %></p></td>
+      <td><p><%= user.MailID %></p></td>
+      <td><p><%= user.Password %></p></td>
+    </tr>
+    <%})%>
+    </table>
+    <img src="crowd.jpg">
+</body>
+</html>
